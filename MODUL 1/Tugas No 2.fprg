@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="lenovo"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-09-28 02:06:57 PM"/>
+        <attribute name="created" value="bGVub3ZvO0RFU0tUT1AtOEs1MTk0UjsyMDIzLTA5LTI3OzEwOjI4OjUxIFBNOzI5NTI="/>
+        <attribute name="edited" value="bGVub3ZvO0RFU0tUT1AtOEs1MTk0UjsyMDIzLTA5LTI4OzAyOjA2OjU3IFBNOzEzOzMxMTU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="berat, tahunbeli, harga, tahunjual, selisih, persen, hasil, total, hargaberat" type="Integer" array="False" size=""/>
+            <output expression="&quot;Masukkan Jumlah Emas Yang Anda Miliki dalan Satuan Gram&quot;" newline="True"/>
+            <input variable="berat"/>
+            <output expression="&quot;Tahun Saat Ini&quot;" newline="True"/>
+            <input variable="tahunbeli"/>
+            <output expression="&quot;Harga Beli per Gram Pada Tahun ini&quot;" newline="True"/>
+            <input variable="harga"/>
+            <output expression="&quot;Tahun Berapa Anda Ingin Menjual Emas Anda?&quot;" newline="True"/>
+            <input variable="tahunjual"/>
+            <assign variable="selisih" expression="tahunjual - tahunbeli"/>
+            <assign variable="hargaberat" expression="harga*berat"/>
+            <assign variable="persen" expression="10/100*hargaberat"/>
+            <assign variable="hasil" expression="persen*selisih"/>
+            <assign variable="total" expression="hasil+hargaberat"/>
+            <output expression="&quot;harga Emas Anda Di Tahun&quot;  &amp;tahunjual&amp;  &quot;adalah&quot;  &amp;total" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
